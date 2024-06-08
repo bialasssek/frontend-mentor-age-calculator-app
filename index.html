@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputs-container">
+        <div class="input-box">
+          <div class="input-name input-name-day">Day</div>
+          <input type="number" name="days" id="days" placeholder="DD" />
+          <p class="input-message input-day-message hidden">
+            This field is required
+          </p>
+        </div>
+        <div class="input-box">
+          <div class="input-name input-name-month">Month</div>
+          <input type="number" name="months" id="months" placeholder="MM" />
+          <p class="input-message input-month-message hidden">
+            This field is required
+          </p>
+        </div>
+        <div class="input-box">
+          <div class="input-name input-name-year">Year</div>
+          <input type="number" name="years" id="years" placeholder="YYYY" />
+          <p class="input-message input-year-message hidden">
+            This field is required
+          </p>
+        </div>
+      </div>
+      <div class="line-container">
+        <div class="hr"></div>
+        <img
+          class="image-arrow"
+          src="assets/images/icon-arrow.svg"
+          alt="icon-arrow"
+        />
+      </div>
+      <div class="display-container">
+        <p class="display-info"><span id="display-years">- -</span> years</p>
+        <p class="display-info"><span id="display-months">- -</span> months</p>
+        <p class="display-info"><span id="display-days">- -</span> days</p>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/bialasssek">bialasssek</a>.
+    </div>
+  </body>
+</html>
